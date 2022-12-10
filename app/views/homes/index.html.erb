@@ -1,0 +1,15 @@
+<div class="box"> 
+<h1>Hello TechWinner$</h1>
+<%= button_to "Log out", destroy_user_session_path, method: :delete, class:"btn btn-secondary"%>
+<%#= button_to "Log out", destroy_user_session_path, method: :delete, data: { turbo: "false" } %>
+</div>
+
+<h2> Users List</h2>
+<div class="container"> 
+  <% @users.each do |user| %>
+    <ul>
+      <%= user.email %> 
+      <%= user.name %>
+    </ul>
+<% end %>  
+</div>

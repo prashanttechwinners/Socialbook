@@ -11,9 +11,16 @@
   </head>
 
   <body>
-   <p class="notice"><%= notice %></p>
-   <p class="alert"><%= alert %></p>
-
-    <%= yield %>
+    <%= render  'layouts/navbar' %>
+      <div class="container">
+        <% flash.each do |type, msg| %>
+        <div>
+          <%= msg %>
+        </div>
+        <% end %>
+        <%= yield %>
+      </div>
+    <%= render  'layouts/footer' %>
   </body>
 </html>
+

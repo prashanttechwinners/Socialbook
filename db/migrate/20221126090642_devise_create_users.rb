@@ -15,7 +15,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string   :user_name
       t.string   :gender
       t.date     :date_of_birth
-      t.integer  :phone_number
+      t.string  :phone_number
 
       ## Rememberable
       t.datetime :remember_created_at
