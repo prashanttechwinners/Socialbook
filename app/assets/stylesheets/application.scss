@@ -77,22 +77,15 @@ float: left;
 clear: both;
 }
 .container{
-margin-top:20px;
-padding-top:10px;
 color: blue;
+
+border:1px solid blue;
 }
 
-.container-fluid{
-width: 100px;
-
-margin-left: 1rem;
-margin-right: 95em;
-margin-bottom: 2em;
-}
 
 .box{
-padding-top:30px;
-height:200px;
+padding-top:50px;
+height:350px;
 width:40%;
 margin-left:30%;
 border-radius:10px;
@@ -135,7 +128,6 @@ border-top: 1px solid #FFFFFF;
 .card-text{
   color: black;
 }
-
 .footer{
 padding: 10px 0;
 margin-top:760px;
@@ -146,6 +138,10 @@ width: 100%;
 text-align: center;
 text-decoration: none;
 }
+#card shadow-sm{
+  height: 10px;
+
+}
 
 .navbar-dark .navbar-brand {
 color: #000;
@@ -153,13 +149,11 @@ font-size: 18px;
 display: -webkit-box;
 }
 
-.coding{
-margin-left: 1rem;
-margin-right: 95em;
+.logo{
 margin-bottom: 2em;
 cursor: pointer;
 outline: none;
-width: 60px; 
+width: 50px; 
 height: 80px; 
 display: block; 
 }
@@ -175,4 +169,5 @@ display: block;
   font-weight: 700;
   box-sizing: border-box;
 }
+
 

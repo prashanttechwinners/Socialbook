@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
  before_action :authenticate_user!
-
  before_action :configure_permitted_parameters, if: :devise_controller?
 
   protected
@@ -22,5 +21,4 @@ class ApplicationController < ActionController::Base
       user_params.permit(:email, :password, :password_confirmation, :first_name, :last_name,:gender,:user_name, :date_of_birth,:phone_number)
     end
   end
-
 end

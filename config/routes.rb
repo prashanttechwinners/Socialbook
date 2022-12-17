@@ -8,13 +8,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  get '/404', to: 'errors#not_found'
+  
   root to: "homes#index"
   resources :homes
   resources :profiles
 
   resources :posts do
-    # resources :comments
+    resources :comments
   end
   
 end
